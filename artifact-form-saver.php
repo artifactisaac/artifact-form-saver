@@ -20,7 +20,7 @@ function activate_artifact_form_saver() { }
 function deactivate_artifact_form_saver() { }
 function uninstall_artifact_form_saver() { }
 function artifactformsaver_queue_script() {
-	wp_enqueue_script('artifactformsaver', plugins_url( 'artifact-form-saver/artifactformsaver.js', _FILE_ ), array('jquery'), null, true);
+	wp_enqueue_script('artifactformsaver', plugins_url( 'artifactformsaver.js', __FILE__ ), array('jquery'), null, true);
 }    
 
 add_action( 'wp_enqueue_scripts', 'artifactformsaver_queue_script' );
